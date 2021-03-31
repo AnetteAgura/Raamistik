@@ -1,0 +1,2 @@
+<?php
+echo 'Raamistik projekt';
