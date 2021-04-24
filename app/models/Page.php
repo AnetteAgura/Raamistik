@@ -33,4 +33,10 @@ class Page
         $this->db->query('SELECT * FROM USERS');
         return $this->db->getAll();
     }
+
+    public function usersCount()
+    {
+        $this->getUsers();
+        return $this->db->rowCount();
+    }
 }
