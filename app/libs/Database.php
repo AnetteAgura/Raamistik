@@ -60,4 +60,10 @@ class Database
     {
         $this->stmt->execute();
     }
+
+    public function getOne()
+    {
+        $this->execute();
+        return $this->stmt->fetch(PDO::FETCH_OBJ);
+    }
 }
